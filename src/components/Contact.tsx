@@ -31,6 +31,18 @@ export function Contact() {
               </p>
               <p>
                 <span className="text-cream/50 uppercase tracking-[0.15em] text-xs">
+                  Phone
+                </span>
+                <br />
+                <a
+                  href={`tel:${site.phoneHref}`}
+                  className="text-champagne transition-colors hover:text-cream"
+                >
+                  {site.phone}
+                </a>
+              </p>
+              <p>
+                <span className="text-cream/50 uppercase tracking-[0.15em] text-xs">
                   Instagram
                 </span>
                 <br />

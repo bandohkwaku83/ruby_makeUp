@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { about } from "@/lib/content";
-import aboutImage from "../../public/images/about.jpg";
+import aboutImage from "../../public/images/about.png";
 
 export function About() {
   return (

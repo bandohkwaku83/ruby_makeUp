@@ -3,7 +3,9 @@ export const site = {
   title: "Ruby Opoku — Makeup Artist",
   tagline: "Flawless artistry. Timeless confidence.",
   slogan: "Where natural beauty meets elevated glamour.",
-  email: "hello@rubyopoku.com",
+  email: "Ruby.edwins1@gmail.com",
+  phone: "+233 55 024 1234",
+  phoneHref: "+233550241234",
   instagram: "@rubyopoku",
   location: "Available for travel & on-location bookings",
 } as const;
@@ -11,7 +13,7 @@ export const site = {
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
+  { label: "At Work", href: "#at-work" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
@@ -20,7 +22,7 @@ export const hero = {
   subheadline:
     "Soft glam, bridal elegance, and bold transformations.",
   ctaPrimary: "Book a Consultation",
-  ctaSecondary: "View Portfolio",
+  ctaSecondary: "See My Work",
 } as const;
 
 export const about = {
@@ -70,65 +72,39 @@ export const services = [
   },
 ] as const;
 
-export const portfolioCategories = [
-  "All",
-  "Bridal",
-  "Soft Glam",
-  "Editorial",
-] as const;
-
-export type PortfolioCategory = (typeof portfolioCategories)[number];
-
-export const portfolioItems = [
-  {
-    id: "1",
-    title: "Garden Romance",
-    category: "Bridal" as const,
-    image:
-      "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
-    aspect: "tall" as const,
-  },
-  {
-    id: "2",
-    title: "Golden Hour Glow",
-    category: "Soft Glam" as const,
-    image:
-      "https://images.unsplash.com/photo-1487412947727-4ce7694f9633?w=800&q=80",
-    aspect: "wide" as const,
-  },
-  {
-    id: "3",
-    title: "Classic Elegance",
-    category: "Bridal" as const,
-    image:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80",
-    aspect: "square" as const,
-  },
-  {
-    id: "4",
-    title: "Editorial Muse",
-    category: "Editorial" as const,
-    image:
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
-    aspect: "tall" as const,
-  },
-  {
-    id: "5",
-    title: "Soft Radiance",
-    category: "Soft Glam" as const,
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
-    aspect: "square" as const,
-  },
-  {
-    id: "6",
-    title: "Statement Glam",
-    category: "Editorial" as const,
-    image:
-      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80",
-    aspect: "wide" as const,
-  },
-] as const;
+// Add photos to public/images/work/ then list them here.
+export const workGallery = {
+  eyebrow: "Behind the Scenes",
+  title: "The artistry in action",
+  description:
+    "A glimpse into the process: thoughtful prep, precise application, and the care behind every look.",
+  images: [
+    {
+      id: "1",
+      src: "/images/work/work-1.jpeg",
+      alt: "Ruby Opoku during a client makeup session",
+      caption: "Client session",
+    },
+    {
+      id: "2",
+      src: "/images/work/work-2.jpeg",
+      alt: "Ruby Opoku applying makeup with precision",
+      caption: "Precision application",
+    },
+    {
+      id: "3",
+      src: "/images/work/work-3.jpeg",
+      alt: "Ruby Opoku applying detailed eye makeup",
+      caption: "Detailed artistry",
+    },
+    {
+      id: "4",
+      src: "/images/work/work-4.jpeg",
+      alt: "Ruby Opoku finishing a client's look",
+      caption: "Finishing touches",
+    },
+  ],
+} as const;
 
 export const testimonials = [
   {

@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     description: site.slogan,
     type: "website",
   },
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    apple: [{ url: "/favicon.png", type: "image/png" }],
+    shortcut: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -41,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${jost.variable} scroll-smooth`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="overflow-x-hidden font-sans antialiased">{children}</body>
     </html>
   );
 }

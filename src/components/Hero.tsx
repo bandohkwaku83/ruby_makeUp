@@ -5,23 +5,25 @@ import heroImage from "../../public/images/heromake.png";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      <div className="absolute inset-0">
-        <Image
-          src={heroImage}
-          alt="Luxury makeup artistry by Ruby Opoku"
-          fill
-          priority
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-espresso/80 via-espresso/50 to-espresso/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-espresso/60 via-transparent to-transparent" />
+    <section className="relative w-full min-h-screen min-h-[100dvh] overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="relative h-full w-full origin-center max-md:scale-[1.12]">
+          <Image
+            src={heroImage}
+            alt="Luxury makeup artistry by Ruby Opoku"
+            fill
+            priority
+            className="object-cover object-[center_38%] md:object-center"
+            sizes="100vw"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-espresso/50 via-espresso/25 to-espresso/70 md:bg-gradient-to-r md:from-espresso/80 md:via-espresso/50 md:to-espresso/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-espresso/65 via-transparent to-transparent" />
       </div>
 
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-6 pb-24 pt-40 lg:px-10 lg:pb-32">
+      <div className="relative mx-auto flex min-h-screen min-h-[100dvh] max-w-7xl flex-col justify-end px-6 pb-20 pt-32 sm:pb-24 sm:pt-40 lg:px-10 lg:pb-32">
         <div className="max-w-2xl">
-          <h1 className="opacity-0-initial animate-fade-up font-serif text-5xl leading-[1.1] text-cream md:text-6xl lg:text-7xl">
+          <h1 className="opacity-0-initial animate-fade-up font-serif text-4xl leading-[1.1] text-cream sm:text-5xl md:text-6xl lg:text-7xl">
             {hero.headline}
           </h1>
           <p className="opacity-0-initial animate-fade-up animation-delay-200 mt-6 max-w-lg text-lg leading-relaxed text-cream/85">
@@ -35,7 +37,7 @@ export function Hero() {
               {hero.ctaPrimary}
             </Link>
             <Link
-              href="#portfolio"
+              href="#at-work"
               className="rounded-full border border-cream/40 px-8 py-3.5 text-xs font-medium uppercase tracking-[0.15em] text-cream transition-colors hover:border-cream hover:bg-cream/10"
             >
               {hero.ctaSecondary}
